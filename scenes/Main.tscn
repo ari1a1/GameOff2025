@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ground"]
+size = Vector2(10, 10)
+
+[node name="Main" type="Node3D"]
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_ground")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+position = Vector3(0, 3, 6)
+rotation_degrees = Vector3(-15, 0, 0)
+current = true
+

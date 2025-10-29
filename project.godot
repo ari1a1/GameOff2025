@@ -1,0 +1,15 @@
+; Engine configuration file.
+; Manually created for Godot 4.5.1 (Windows, Forward+)
+config_version=5
+
+[application]
+config/name="GameJam2025"
+run/main_scene="res://scenes/Main.tscn"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[rendering]
+renderer/rendering_method="forward_plus"
+

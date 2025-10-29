@@ -1,0 +1,20 @@
+# Godot 4.x project ignores
+.godot/
+.import/
+export/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Godot 3.x legacy import files (harmless for 4.x but safe to ignore)
+*.import
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#1b1f23"/>
+  <g transform="translate(64,64)">
+    <circle r="40" fill="#3c9"/>
+    <text x="0" y="8" text-anchor="middle" font-family="Segoe UI, Arial" font-size="28" fill="#112" font-weight="700">GJ</text>
+  </g>
+</svg>
