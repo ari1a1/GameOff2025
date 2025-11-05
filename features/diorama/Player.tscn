@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://features/diorama/placeholder_gradient.tres" id="1_1b5qk"]
+[ext_resource type="Script" path="res://features/diorama/PlayerController3D.gd" id="2_pctrl"]
+
+[sub_resource type="CapsuleShape3D" id="2_xcap"]
+radius = 0.3
+height = 1.0
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("2_pctrl")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+texture = ExtResource("1_1b5qk")
+billboard = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+shape = SubResource("2_xcap")
