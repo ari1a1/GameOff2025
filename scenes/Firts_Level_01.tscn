@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=3 uid="uid://by1edbwecd1gt"]
+
+[ext_resource type="PackedScene" uid="uid://bc5bcxbqmbply" path="res://assets/First Level/Ceiling_Level_01_Low_01.glb" id="1_8bemb"]
+[ext_resource type="PackedScene" uid="uid://sag6lhfj25i2" path="res://assets/First Level/Exterior_Walls_Base_Level_01_Low_01.glb" id="2_hi5ux"]
+[ext_resource type="PackedScene" uid="uid://b3fl1kb6c505t" path="res://assets/First Level/Exterior_Walls_Level_01_Low_01.glb" id="3_o37hn"]
+[ext_resource type="PackedScene" uid="uid://p1l3mqqgodlj" path="res://assets/First Level/Floor_Level_01_Low_01.glb" id="4_jrh74"]
+[ext_resource type="PackedScene" uid="uid://3a0bat1nprjt" path="res://assets/First Level/interior_Walls_Level_01_Low_01.glb" id="5_krdri"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Ceiling_Level_01_Low_012" parent="." instance=ExtResource("1_8bemb")]
+
+[node name="Exterior_Walls_Base_Level_01_Low_012" parent="." instance=ExtResource("2_hi5ux")]
+
+[node name="Exterior_Walls_Level_01_Low_012" parent="." instance=ExtResource("3_o37hn")]
+
+[node name="Floor_Level_01_Low_012" parent="." instance=ExtResource("4_jrh74")]
+
+[node name="interior_Walls_Level_01_Low_012" parent="." instance=ExtResource("5_krdri")]
