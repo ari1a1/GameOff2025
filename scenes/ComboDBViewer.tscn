@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/combat/ComboDBViewer.gd" id="1"]
+
+[node name="ComboDBViewer" type="CanvasLayer"]
+script = ExtResource("1")
+layer = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+bbcode_enabled = true
+scroll_active = false
+text = "[b]ComboDBViewer[/b]"

@@ -7,6 +7,8 @@ signal moved(new_global_position: Vector3)
 @export var decel: float = 18.0
 @export var gamepad_deadzone: float = 0.18
 
+@export var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
+
 var _input_dir: Vector2 = Vector2.ZERO
 var _camera: Camera3D
 
@@ -54,6 +56,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0.0, drop)
 		velocity.z = move_toward(velocity.z, 0.0, drop)
 
-	velocity.y = 0.0
+	# Apply gravity when not grounded; clear residual when grounded.
+	if not is_on_floor():
+		velocity.y -= gravity * delta
+	else:
+		if velocity.y < 0.0:
+			velocity.y = 0.0
+
 	move_and_slide()
 	moved.emit(global_position)

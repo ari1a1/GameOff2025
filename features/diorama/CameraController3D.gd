@@ -8,7 +8,7 @@ func _ready() -> void:
 	_target_position = global_position
 	var players: Array[Node] = get_tree().get_nodes_in_group("player")
 	if players.size() > 0:
-		var p := players[0] as Node3D
+		var p: Node3D = players[0] as Node3D
 		if p and p.has_signal("moved"):
 			p.connect("moved", Callable(self, "_on_player_moved"))
 			_target_position = p.global_position

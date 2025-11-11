@@ -1,20 +1,22 @@
 [gd_scene load_steps=4 format=3 uid="uid://ed74xy4xsu64"]
 
-[ext_resource type="Texture2D" uid="uid://daghd1b65s0mo" path="res://features/diorama/placeholder_gradient.tres" id="1_1b5qk"]
+[ext_resource type="Texture2D" uid="uid://baqmokkcl8efx" path="res://assets/gauss/gauss_static.PNG" id="2_n7ykp"]
 [ext_resource type="Script" uid="uid://b4uxlw61xqowc" path="res://features/diorama/PlayerController3D.gd" id="2_pctrl"]
 
 [sub_resource type="CapsuleShape3D" id="2_xcap"]
-radius = 0.17
-height = 1.58
+margin = 0.1
+height = 1.0
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("2_pctrl")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.07, 0)
-pixel_size = 0.033
+pixel_size = 0.001
 billboard = 1
-texture = ExtResource("1_1b5qk")
+double_sided = false
+texture_filter = 0
+texture = ExtResource("2_n7ykp")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96, 0)
